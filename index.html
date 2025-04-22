@@ -1,91 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minhocultura: O Ouro da Terra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minhocário: Crie seu Ouro Negro</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <style>
-        body {
-            font-family: sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
-            color: #333;
+        /* Mantenha seus estilos personalizados aqui, se houver */
+        .nav-img {
+            max-height: 50px; /* Ajuste a altura do logo conforme necessário */
         }
-        h1, h2 {
-            color: #38761d; /* Verde escuro */
+        .botao-inicio {
+            background-color: #38761d; /* Verde tema minhocário */
+            border-color: #38761d;
         }
-        .container {
-            background-color: #fff;
-            padding: 20px;
+        .botao-inicio:hover {
+            background-color: #274e13;
+            border-color: #274e13;
+        }
+        .inicio-fundo {
+            background-color: #f0fff0; /* Verde claro suave */
+            padding: 40px 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .section {
-            margin-bottom: 20px;
-            line-height: 1.6;
+        .secao-minhocario {
+            background-color: #e9ecef; /* Cinza claro suave */
+            padding: 30px 20px;
+            border-radius: 8px;
         }
-        .important {
-            font-weight: bold;
-            color: #b10000; /* Vermelho */
-        }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+        .formulario {
+            background-color: #f8f9fa; /* Branco acinzentado */
+            padding: 30px;
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1>Minhocultura: Transformando Resíduos em Riqueza</h1>
-            <p>Descubra os benefícios e o passo a passo para criar sua própria criação de minhocas.</p>
-        </header>
-
-        <section class="section">
-            <h2>O Que é Minhocultura?</h2>
-            <p>A minhocultura é a criação de minhocas, geralmente da espécie Eisenia fetida (minhoca vermelha californiana), em sistemas controlados para a produção de <span class="important">húmus de minhoca</span>, um fertilizante orgânico de alta qualidade, e também para a produção das próprias minhocas, utilizadas como iscas de pesca ou na alimentação animal.</p>
-        </section>
-
-        <section class="section">
-            <h2>Benefícios da Minhocultura</h2>
-            <ul>
-                <li><span class="important">Produção de Húmus de Minhoca:</span> Um fertilizante orgânico rico em nutrientes essenciais para as plantas, melhorando a estrutura do solo e a retenção de água.</li>
-                <li><span class="important">Reciclagem de Resíduos Orgânicos:</span> Transforma restos de alimentos, folhas e outros materiais orgânicos em um produto valioso, reduzindo o volume de lixo.</li>
-                <li><span class="important">Fonte de Renda:</span> A venda de húmus e de minhocas pode gerar uma renda extra ou principal.</li>
-                <li>Melhora a saúde do solo e das plantas de forma natural e sustentável.</li>
-                <li>Baixo custo de implementação e manutenção.</li>
+    <header class=" p-5">
+        <nav class="container d-flex justify-content-between align-items-center" >
+            <img src="img/logo-minhocario.png" alt="Logo Minhocário" class="nav-img " loading="lazy">
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#o-que-e">O Que É</a></li>
+                <li class="nav-item"><a class="nav-link" href="#montagem">Montagem</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
             </ul>
+            <div id="acessibilidade" class="menu-acessibilidade">
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-success fst-italic fw-bold">Bem-vindo ao</h1>
+                    <img src="img/logo-minhocario-2.png" alt="Logo Minhocário Detalhado" class="mb-3" width="563"
+                        height="278" loading="lazy">
+                    <a href="#o-que-e"
+                        class="btn btn-primary btn-lg botao-inicio fw-semibold">Saiba Mais!</a>
+                </div>
+                <img src="img/minhocas-feliz.png" alt="Ilustração de minhocas felizes" title="Minhocas Felizes" class="img-fluid img-inicio">
+            </div>
         </section>
 
-        <section class="section">
-            <h2>Como Começar sua Criação de Minhocas</h2>
-            <ol>
-                <li><strong>Escolha do Recipiente:</strong> Pode ser uma caixa de madeira, plástico ou alvenaria. O importante é ter boa ventilação e drenagem.</li>
-                <li><strong>Preparo da Cama:</strong> Utilize materiais como serragem, folhas secas, esterco curtido e restos de alimentos não ácidos. A cama deve estar úmida, mas não encharcada.</li>
-                <li><strong>Aquisição das Minhocas:</strong> Comece com uma quantidade adequada de minhocas vermelhas californianas.</li>
-                <li><strong>Alimentação das Minhocas:</strong> Ofereça restos de frutas e verduras (evite cítricos e alimentos processados), borra de café, cascas de ovo, etc., em pequenas quantidades.</li>
-                <li><strong>Manutenção:</strong> Monitore a umidade, aeração e a quantidade de alimento. Retire o húmus quando estiver pronto (cor escura e textura homogênea).</li>
-            </ol>
+        <section id="o-que-e" class="my-5 pt-6 secao-minhocario" tabindex="0" aria-label="Seção sobre o que é um minhocário">
+            <div class="container d-flex align-items-center ">
+                <div class="col-md-4 d-flex justify-content-center ">
+                    <img src="img/minhocario-ilustracao.png" alt="Ilustração de um minhocário" class="rounded-pill img-fluid" loading="lazy">
+                </div>
+                <div class="col-md-8">
+                    <h2>O Que é um Minhocário?</h2>
+                    <p class="p-2">Um minhocário é um sistema para a criação de minhocas em ambiente doméstico ou em maior escala, com o objetivo principal de transformar resíduos orgânicos em húmus de alta qualidade. As minhocas, especialmente a Eisenia fetida (vermelha californiana), consomem restos de alimentos e outros materiais orgânicos, excretando um fertilizante rico em nutrientes, essencial para a saúde das plantas e do solo.</p>
+                    <p class="p-2">Além da produção de húmus, o minhocário também contribui para a redução do lixo orgânico doméstico, promovendo a sustentabilidade e a compostagem de forma eficiente e sem odores, quando bem manejado.</p>
+                </div>
+            </div>
         </section>
 
-        <section class="section">
-            <h2>Recursos Úteis</h2>
-            <ul>
-                <li><a href="https://www.google.com/search?q=minhocultura" target="_blank">Pesquisar mais sobre minhocultura no Google</a></li>
-                <li><a href="https://www.youtube.com/results?search_query=minhocultura" target="_blank">Vídeos sobre minhocultura no YouTube</a></li>
-                </ul>
-        </section>
-
-        <footer>
-            <p>&copy; 2023 Minhocultura Sustentável</p>
-        </footer>
-    </div>
-</body>
-</html>
+        <section id="montagem" class="my-5 pt-6 secao-minhocario" tabindex="0" aria-label="Seção sobre como montar um minhocário">
+            <div class="container">
+                <h2 class="text-center mb-4">Como Montar seu Minhocário</h2>
+                <div class
