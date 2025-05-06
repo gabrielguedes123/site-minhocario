@@ -5,71 +5,67 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Minhocultura: Cultivando a Terra</title>
+  <title>Minhocultura Sustentável</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet"
    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-  <style>
-  /* Estilos personalizados */
-  .nav-img {
-   max-height: 40px;
-  }
- 
-
-  .botao-principal {
-   background-color: #556b2f; /* Verde oliva */
-   border-color: #556b2f;
-  }
- 
-
-  .botao-principal:hover {
-   background-color: #3d4e27;
-   border-color: #3d4e27;
-  }
- 
-
-  .fundo-claro {
-   background-color: #f5f5dc; /* Bege */
-   padding: 30px 15px;
-   border-radius: 6px;
-  }
- 
-
-  .secao {
-   background-color: #e0eee0; /* Verde claro acinzentado */
-   padding: 20px 15px;
-   border-radius: 6px;
-   margin-top: 20px;
-  }
- 
-
-  .formulario {
-   background-color: #f0f8ff; /* Azul claro */
-   padding: 20px;
-   margin-top: 20px;
-   border-radius: 6px;
-  }
- 
-
-  /* Estilos de acessibilidade simplificados */
-  .menu-acessibilidade {
-   display: flex;
-   gap: 5px;
-  }
-  </style>
+  <link rel="stylesheet" href="styles.css">
  </head>
  
 
  <body>
-  <header class=" p-3">
+  <header class=" p-5 bg-success text-white">
+ 
+
    <nav class="container d-flex justify-content-between align-items-center">
     <img src="img/logo-minhocario.png" alt="Logo Minhocultura" class="nav-img " loading="lazy">
-    <ul class="nav">
-     <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-     <li class="nav-item"><a class="nav-link" href="#o-que-e">O Que É</a></li>
-     <li class="nav-item"><a class="nav-link" href="#tipos">Tipos de Minhocas</a></li>
-     <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+    <ul class="nav mt-5">
+     <li class="nav-item"><a class="nav-link text-white" href="#inicio">Início</a></li>
+     <li class="nav-item"><a class="nav-link text-white" href="#o-que-e">O Que É</a></li>
+     <li class="nav-item"><a class="nav-link text-white" href="#beneficios">Benefícios</a></li>
+     <li class="nav-item"><a class="nav-link text-white" href="#tipos">Tipos de Minhocas</a></li>
+     <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
     </ul>
     <div id="acessibilidade" class="menu-acessibilidade">
-     <button id="aumentar-fonte" class="btn btn-sm btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
-     <button id="diminuir-fonte" class="btn btn-sm btn-primary fw-bold" aria-label="
+     <button id="botao-acessibilidade" class="btn btn-light fw-bold rotacao-botao" aria-expanded="false">Acessibilidade</button>
+     <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista bg-light p-2 rounded">
+      <button id="aumentar-fonte" class="btn btn-outline-success btn-sm fw-bold"
+       aria-label="Aumentar o tamanho da fonte">A+</button>
+      <button id="diminuir-fonte" class="btn btn-outline-success btn-sm fw-bold"
+       aria-label="diminuir o tamanho da fonte">A-</button>
+      <button id="alterna-contraste" class="btn btn-outline-success btn-sm fw-bold"
+       aria-label="Alterna o contraste de cores"> <i class="bi bi-contrast"></i></button>
+     </div>
+    </div>
+   </nav>
+ 
+
+  </header>
+ 
+
+  <main class="container my-5">
+ 
+
+   <section id="inicio" class="my-5 bg-light p-4 rounded">
+    <div class="inicio-fundo d-flex justify-content-between align-items-center">
+     <div class="">
+      <h1 class="display-4 text-success fst-italic fw-bold">Minhocultura Sustentável</h1>
+      <p class="lead">Descubra os benefícios da criação de minhocas para um futuro mais verde.</p>
+      <a href="#o-que-e" class="btn btn-success btn-lg fw-semibold">Saiba Mais!</a>
+     </div>
+     <img src="img/minhocas-feliz.png" alt="Ilustração de minhocas felizes" title="Minhocas Felizes"
+      class="img-fluid img-inicio" style="max-width: 300px;">
+    </div>
+   </section>
+ 
+
+   <section id="o-que-e" class="my-5 pt-6 bg-light p-4 rounded" tabindex="0"
+    aria-label="Seção sobre o que é minhocultura">
+    <div class="container d-flex align-items-center ">
+     <div class="col-md-4 d-flex justify-content-center ">
+      <img src="img/minhocario-ilustracao.png" alt="Ilustração de um minhocário" class="rounded-pill img-fluid"
+       loading="lazy">
+     </div>
+     <div class="col-md-8">
+      <h2>O Que é Minhocultura?</h2>
+      <p class="p-2">A
