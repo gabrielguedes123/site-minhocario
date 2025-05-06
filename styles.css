@@ -3,7 +3,7 @@
 
 :root {
     --laranja-claro: #575aff;
-    --alto-contraste-fundo: #000000;
+    --alto-contraste-fundo: #3b5730;
     --alto-contraste-texto: #000000;
     --alto-contraste-link: #f0b5b3;
 }
@@ -103,7 +103,7 @@ h2 {
 }
 
 #galeria {
-    background-color: #f16464;
+    background-color: #6571e0;
 
 }
 
